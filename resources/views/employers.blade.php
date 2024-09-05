@@ -52,10 +52,13 @@
 
 <section class="containerJobs2">
         
-    <div  class="containerJobs">
+   
 
         @foreach ($jobs as $job)
-            
+        <div  class="containerJobs">
+        <div style="display: flex; gap: 1em; padding: 5px; border-bottom: 1px solid black; width: 453%">
+
+     
         <div>
             <img class="jobsImage" src="{{$job->jobImage}}" alt="">
         </div>
@@ -64,7 +67,7 @@
             <h1>{{$job->jobName}}</h1>
             <p>{{$job->jobCity}} - {{$job->jobState}}</p>
         </div>
- 
+    </div>
 
         @endforeach
  

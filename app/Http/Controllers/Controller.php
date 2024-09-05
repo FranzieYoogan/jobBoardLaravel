@@ -62,7 +62,7 @@ class Controller
 
         $jobs = DB::select('select * from jobs');
 
-        $peopleCount = DB::table('person')->count();
+        $peopleCount = DB::table('jobs')->count();
 
         return view('employers', ['peopleCount' => $peopleCount, 'jobs' => $jobs]);
 
