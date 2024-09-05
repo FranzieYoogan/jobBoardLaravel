@@ -49,6 +49,29 @@
     <h1 class="allJobs">All Jobs ({{$peopleCount}})</h1>
 
 </section>
+
+<section class="containerJobs2">
+        
+    <div  class="containerJobs">
+
+        @foreach ($jobs as $job)
+            
+        <div>
+            <img class="jobsImage" src="{{$job->jobImage}}" alt="">
+        </div>
+       
+        <div>
+            <h1>{{$job->jobName}}</h1>
+            <p>{{$job->jobCity}} - {{$job->jobState}}</p>
+        </div>
+ 
+
+        @endforeach
+ 
+
+</div>
+
+</section>
     
 </body>
 </html>

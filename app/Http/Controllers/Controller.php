@@ -60,11 +60,11 @@ class Controller
 
     public function employers() {
 
-        $people = DB::select('select * from person');
+        $jobs = DB::select('select * from jobs');
 
         $peopleCount = DB::table('person')->count();
 
-        return view('employers', ['peopleCount' => $peopleCount, 'people' => $people]);
+        return view('employers', ['peopleCount' => $peopleCount, 'jobs' => $jobs]);
 
         
     }
