@@ -1,0 +1,49 @@
+.divHeader {
+
+    justify-content: end;
+
+}
+
+.navbar {
+
+    background-color: rgb(0, 162, 255) !important;
+
+}
+
+.suitcaseStyle {
+
+    width: 30px;
+
+}
+
+.jobSpan {
+
+    position: relative;
+    top: 3px;
+    font-weight: 900;
+    color: white;
+
+}
+
+.portalSpan {
+
+    position: relative;
+    top: 3px;
+    left: 8px;
+    font-weight: 900;
+    color: white;
+
+}
+
+.nav-link {
+
+    color: white;
+
+}
+
+.nav-link:hover {
+
+    color: white;
+    font-weight: 900;
+
+}

@@ -1,0 +1,80 @@
+.imageStyle {
+
+    width: 95px;
+    border: 1px solid black;
+    border-radius: 200px;
+}
+
+.containerAll {
+
+
+    margin-top: 3em;
+    box-shadow: 0px 0px 4px 0px black;
+    padding: 10px;
+   
+}
+
+.containerItems {
+
+    display: flex;
+    gap: 1em;
+}
+
+.serverStyle {
+
+    width: 50px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 90px;
+    background-color: rgb(28, 211, 235);
+}
+
+@media only screen and (max-width: 600px) {
+    .serverStyle {
+
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border: 1px solid black;
+        top: 10px;
+        border-radius: 90px;
+        background-color: rgb(28, 211, 235);
+    }
+
+    .titleStyle {
+
+        font-size: 15px !important;
+        position: relative;
+        top: 17px !important;
+        left: 5px;
+    }
+
+  }
+
+
+.githubStyle {
+
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 11px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 90px;
+}
+
+.containerAll2 {
+
+    margin-left: 1em;
+    margin-top: 2em;
+    display: flex;
+    
+}
+
+.titleStyle {
+
+    font-size: 25px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+}
