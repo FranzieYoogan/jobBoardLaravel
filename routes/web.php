@@ -18,3 +18,5 @@ Route::get('/employers', function () {
 Route::POST('/', [Controller::class, 'login']);
 Route::GET('/dashboard', [Controller::class, 'dashboard']);
 Route::GET('/employers', [Controller::class, 'employers']);
+Route::POST('/employers', [Controller::class, 'getJob']);
+

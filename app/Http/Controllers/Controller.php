@@ -69,4 +69,19 @@ class Controller
         
     }
 
+    public function getJob(Request $request) {
+
+        $searchInput = $request->input('searchInput');
+
+        $jobs = DB::select("select * from jobs where jobName LIKE '$searchInput%' OR jobCity LIKE '$searchInput%'");
+
+        $peopleCount = DB::table('jobs')->count();
+
+
+        return view('employers', ['jobs' => $jobs,'peopleCount' => $peopleCount]);
+
+
+
+    }
+
 }

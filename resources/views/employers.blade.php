@@ -30,11 +30,12 @@
                 </p>
         </div>
 
-            <div class="containerInput">
+            <form method="POST" action="/employers" class="containerInput">
+                @csrf
 
-                <input type="text" class="inputStyle"> <button type="button" class="btn btn-primary">Search</button>
+                <input type="text" name="searchInput" class="inputStyle" required> <button type="submit" class="btn btn-primary">Search</button>
 
-            </div>
+            </form>
         
 
             </div>
