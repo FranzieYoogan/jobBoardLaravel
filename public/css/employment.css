@@ -1,0 +1,31 @@
+.containerAll {
+
+    display: flex;
+    margin-top: 5em;
+    justify-content: center;
+}
+
+.containerItems {
+
+    display: flex;
+    gap: 2em;
+}
+
+.locationStyle {
+
+    margin-top: 1em;
+
+}
+
+.imageStyle {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+}
+
+h5 {
+
+    text-align: center;
+
+}
