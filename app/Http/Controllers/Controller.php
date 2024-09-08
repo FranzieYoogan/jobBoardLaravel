@@ -84,4 +84,14 @@ class Controller
 
     }
 
+    public function employment(Request $request) {
+
+        $id = $request->input('id');
+        $jobs = DB::select("select * from jobs WHERE jobID = '$id'");
+
+        return view('employment', ['jobs' => $jobs]);
+       
+
+    }
+
 }

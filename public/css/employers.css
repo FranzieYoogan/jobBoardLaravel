@@ -54,3 +54,24 @@
     display: flex;
     gap: 1em;
 }
+
+.buttonJob {
+
+    border: none;
+    background-color: transparent;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .formStyle {
+      width: 150% !important;    
+    
+    }   
+
+    .textStyle {
+
+        font-size: 20px !important;
+        width: 300px;
+    }
+
+  }

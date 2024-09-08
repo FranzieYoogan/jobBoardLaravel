@@ -54,21 +54,23 @@
 <section class="containerJobs2">
         
    
-
+    <div  class="containerJobs">
         @foreach ($jobs as $job)
-        <div  class="containerJobs">
-        <div style="display: flex; gap: 1em; padding: 5px; border-bottom: 1px solid black; width: 453%">
-
-     
+       
+        <form method="POST" action="/employment" class="formStyle" style="display: flex; gap: 1em; padding: 5px; border-bottom: 1px solid black; width: 430%">
+            @csrf
+            
+            <input type="text" value="{{$job->jobID}}" name="id" style="display: none">
+            
         <div>
             <img class="jobsImage" src="{{$job->jobImage}}" alt="">
         </div>
        
         <div>
-            <h1>{{$job->jobName}}</h1>
+            <button class="buttonJob" type="submit"><h1>{{$job->jobName}}</h1></button>
             <p>{{$job->jobCity}} - {{$job->jobState}}</p>
         </div>
-    </div>
+    </form>
 
         @endforeach
  
